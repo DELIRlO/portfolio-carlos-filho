@@ -5,7 +5,7 @@ const contactItems = [
   {
     social: 'github',
     link: 'ysneshy',
-    href: 'https://github.com/ysneshy',
+    href: 'https://github.com/delirlo',
   },
   {
     social: 'linkedin',
@@ -31,7 +31,7 @@ const contactItems = [
   {
     social: 'wakatime',
     link: '@ysneshy',
-    href: 'https://wakatime.com/@ysneshy',
+    href: 'https://wakatime.com/@delirlo',
   },
   {
     social: 'codesandbox',
@@ -46,7 +46,7 @@ const contactItems = [
   {
     social: 'whatszap',
     link: 'Carlos_Filho',
-    href: 'https://api.whatsapp.com/send?phone=559184851072',
+    href: 'https://api.whatsapp.com/send?phone=559188199828',
   },
   
 ];
