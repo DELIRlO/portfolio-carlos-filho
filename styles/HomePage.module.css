@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 75vh;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.background {
+  font-size: 5rem;
+  font-family: 'Montserrat';
+  line-height: 1.1;
+  color: var(--bg-text);
+  position: absolute;
+}
+
+.foreground {
+  display: flex;
+  color: var(--accent-color);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.name {
+  color: #eee;
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  background-image: url("https://media0.giphy.com/media/YqhIK6Gbor6CLeloBq/200w.gif?cid=6c09b95269ulypnl10lyzzfv53va8nfc7oys3nhvxdvhtz30&rid=200w.gif&ct=g");
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+}
+
+/*transicao de cor */
+.name:hover {
+  cursor: pointer;
+  color: rgba(113, 17, 245);
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  transition: color 2s;
+  background-image: url("https://i.pinimg.com/originals/8a/7c/2c/8a7c2cece42cd158a110d9bb26ca938a.gif");
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* cursor  */
+
+/* efeito astronalta roxo */
+.name span {
+  color: #9B8DA2;
+}
+
+/*translation astronaultao lado do nome*/
+.name span:hover {
+  color: rgb(191, 64, 64);
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  transition: color 4s,
+}
+
+/*text shadown transicao front-end */
+.bio {
+  text-shadow: 0px 0px 10px rgba(113, 17, 245);
+
+  -webkit-text-shadow: 0px 0px 10px rgba(113, 17, 245);
+
+  -moz-text-shadow: 0px 0px 10px rgba(113, 17, 245);
+
+  -ms-text-shadow: 0px 0px 10px rgba(113, 17, 245);
+
+  -o-text-shadow: 0px 0px 10px rgba(113, 17, 245);
+}
+
+.bio {
+  width: max-content;
+  color: #eee;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.bio::before,
+.bio::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bio::before {
+  background: var(--main-bg);
+  animation: typewriter 2.5s steps(24) 500ms forwards;
+}
+
+.bio::after {
+  margin-left: 0.4rem;
+  width: 0.125em;
+  background: rgba(113, 17, 245);
+  animation: typewriter 2.5s steps(24) 500ms forwards,
+    blink 750ms steps(24) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+/*transicao de cor */
+.bio:hover {
+  cursor: pointer;
+  color: rgba(113, 17, 245);
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  transition: color 2s;
+}
+
+/* botoes gostosos */
+.button {
+  background: rgb(155, 141, 162);
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1.5rem;
+  color: #371B45;
+  font-weight: 600;
+  border-radius: 0px 100px 0px 100px;
+  cursor: pointer;
+  box-shadow: 0 0 30px 5px rgba(113, 17, 245);
+  -webkit-transition: all 01s ease-out;
+  -moz-transition: all 01s ease-out;
+  transition: all 01s ease-out;
+  transition: color 1s, background 2s;
+  position: relative;
+  border: none;
+  min-height: 44px;
+  min-width: 44px;
+  touch-action: manipulation;
+}
+
+.outlined {
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  color: rgba(113, 17, 245);
+  border: 2px solid var(--accent-color);
+  background: transparent;
+  cursor: pointer;
+  border-radius: 0px 100px 0px 100px;
+  position: relative;
+  min-height: 44px;
+  min-width: 44px;
+  touch-action: manipulation;
+}
+.button:hover{
+  color: rgb(255, 202, 40);
+    border: 2px solid rgb(191, 64, 64);
+    background: rgb(255, 87, 34);
+    box-shadow: 0 0 30px 5px rgb(191, 64, 64);
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    transition: color 1s, background 2s;
+  }
+
+.outlined:hover {
+
+  color: rgb(255, 202, 40);
+  border: 2px solid rgb(191, 64, 64);
+  background-image: url("https://media.tenor.com/deHNDV19AgQAAAAC/galaxy.gif");
+  box-shadow: 0 0 30px 5px rgb(191, 64, 64);
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  transition: color 1s, background 2s;
+  position: relative;
+
+}
+
+.illustration {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: round;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(-50px)
+  }
+
+  100% {
+    transform: translateY(0)
+  }
+}
+
+/* astronalta fade color */
+.illustration span {
+  background: linear-gradient(#1497be, #1c2aec);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  animation: text 50s linear infinite;
+
+}
+
+@keyframes text {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* teste 999 */
+
+/* 4K Screens */
+@media screen and (min-width: 2000px) {
+  .background {
+    font-size: 8.5rem;
+  }
+
+  .content {
+    padding: 0 3rem;
+  }
+
+  .name {
+    z-index: 1;
+    font-size: 6rem;
+  }
+
+  .bio {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .button {
+    font-size: 2rem;
+  }
+
+
+  .outlined {
+    font-size: 2rem;
+  }
+
+  .illustration {
+    height: 900px;
+    width: 700px;
+
+  }
+
+}
+
+/* Tablet and iPad Pro */
+@media screen and (max-width: 1100px) {
+  .background {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .foreground {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .name {
+    z-index: 1;
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+
+  .bio {
+    font-size: 1.6rem;
+    margin: 0.75rem auto 2rem;
+    max-width: 80%;
+  }
+
+  .illustration {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+    margin-top: 2rem;
+  }
+}
+
+/* iPad */
+@media screen and (max-width: 900px) {
+  .foreground {
+    margin: 2rem 0;
+  }
+
+  .name {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .bio {
+    font-size: 1.5rem;
+  }
+
+  .illustration {
+    height: 500px;
+    width: 320px;
+    bottom: -50px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1050px) {
+  .container {
+    display: flex;
+  }
+
+  .illustration {
+    display: none;
+  }
+}
+
+/* Modern Mobile Devices */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .foreground {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .name {
+    font-size: 2.5rem;
+  }
+  
+  .bio {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .button, .outlined {
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .illustration {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .foreground {
+    margin: 0;
+    gap: 1.5rem;
+  }
+
+  .name {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .bio {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+
+  .button, .outlined {
+    font-size: 1rem;
+    margin: 0.25rem;
+    padding: 0.75rem 1.25rem;
+    width: calc(50% - 0.5rem);
+    display: inline-block;
+    text-align: center;
+  }
+
+  .illustration {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: 30vh;
+    margin-top: 1rem;
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+  .name {
+    font-size: 1.75rem;
+  }
+  
+  .bio {
+    font-size: 1.1rem;
+  }
+  
+  .button, .outlined {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "vscode-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@notionhq/client": "^2.2.15",
+    "framer-motion": "^10.16.16",
+    "next": "^14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-github-calendar": "^4.1.6",
+    "react-icons": "^4.12.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-simple-typewriter": "^5.0.1",
+    "sass": "^1.69.5",
+    "styled-components": "^6.1.6",
+    "typewriter-effect": "^2.21.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.6",
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.4",
+    "typescript": "^5.3.3"
+  }
+}
